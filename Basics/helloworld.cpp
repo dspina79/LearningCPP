@@ -18,8 +18,13 @@ void loopMessage(int times) {
     }
 }
 
+
 int main() {
+    char name[] = "";
     cout << "Hello World!" << endl;
+    cout << "What is your name? ";
+    cin >> name;
+    cout << "Hello, " << name << endl;
     cout << "The sum of 1 and 2 is " << add(1, 2) << endl;
     cout << "The product of 2 and 4 is " << multiply(2, 4) << endl;
     loopMessage(4);
