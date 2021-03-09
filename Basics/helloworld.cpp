@@ -59,7 +59,5 @@ int main() {
     cout << "The sum of 7 and 6 is " << maths->add(7, 6) << endl;
     cout << "The difference between 7 and 6 is " << maths->subtract(7,6) << endl;
 
-
-
     return 0;
 }
