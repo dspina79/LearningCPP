@@ -2,6 +2,7 @@
 using namespace std;
 
 void printASCII();
+void printBooleans();
 
 int main() {
     short x = 40;
@@ -29,10 +30,16 @@ int main() {
     cout << "CHAR(55) = " <<  weird << endl;
     cout << "CHAR(67) = " <<  weirdOther << endl;
     
-    printASCII();
-
+    //printASCII();
+    printBooleans();
 
     return 0;
+}
+
+void printBooleans () {
+    bool someTruth = true;
+    cout << "Boolean without boolAlpha is " << someTruth << endl;
+    cout << "Boolean with boolAlpha is " << boolalpha << someTruth << endl;
 }
 
 void printASCII() {
