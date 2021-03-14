@@ -28,6 +28,24 @@ string insertString(string original, string toInsert, int position) {
     return original.insert(position, toInsert);
 }
 
+void tryPopBack(string value) {
+    int initialLength = value.length();
+    for (int i = 0; i < initialLength; i++) {
+        value.pop_back();
+        cout << value << endl;
+    }
+}
+
+void findReplace(string original, string toFind, string toReplace) {
+    cout << "The original is " << original << endl;
+    int source = original.find(toFind);
+    if (source >= 0) {
+        original.replace(source, toFind.length(), toReplace);
+    }
+
+    cout << "The new output is " << original << endl;
+}
+
 int main() {
     string greeting = "Hello";
     string emptyString; // defaults to empty string
@@ -37,7 +55,9 @@ int main() {
     cout << greet("Dean") << endl;
     cout << "The phrase 'NOT' inserted at position 7 of 'The end is near' is: " << insertString("The end is near", "NOT", 7) << endl;
     cout << "Erasing the first two characters of 'Hello' is " << greeting.erase(0, 2) << endl;
-    getInputWithGetLine();
- 
+    //getInputWithGetLine();
+    string testValue = "quickly diminishing";
+    tryPopBack(testValue);
+    findReplace("Holding my hand", "Holding", "Gripping");
     return 0;
 }
