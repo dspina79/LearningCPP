@@ -1,5 +1,6 @@
 #import <iostream>
 #import <cmath>
+#import <string>
 
 using std::string;
 using std::cin;

@@ -21,7 +21,11 @@ void getInputWithGetLine() {
     string motto;
     cout << "What is your motto? ";
     getline(cin, motto);
-    cout << "The motto is \"" << motto << "\"." endl;
+    cout << "The motto is \"" << motto << "\"." << endl;
+}
+
+string insertString(string original, string toInsert, int position) {
+    return original.insert(position, toInsert);
 }
 
 int main() {
@@ -31,7 +35,8 @@ int main() {
     cout << greeting << " has a length of " << greeting.length() << endl;
     cout << greeting << " there" << endl;
     cout << greet("Dean") << endl;
- 
+    cout << "The phrase 'NOT' inserted at position 7 of 'The end is near' is: " << insertString("The end is near", "NOT", 7) << endl;
+    cout << "Erasing the first two characters of 'Hello' is " << greeting.erase(0, 2) << endl;
     getInputWithGetLine();
  
     return 0;
